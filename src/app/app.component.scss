@@ -87,8 +87,8 @@
 .container3{
   margin-top: 1rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   gap: 1rem;
 }
