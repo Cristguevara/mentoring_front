@@ -1,94 +1,117 @@
-.redBox{
-  height: 50px;
-  width: 100%;
-  background: red;
-}
-.blueBox{
-  height: 50px;
-  width: 100%;
-  background: blue;
-}
-.yellowBow{
-  height: 50px;
-  width: 100%;
-  background: yellow;
-}
+// .redBox{
+//   height: 50px;
+//   width: 100%;
+//   background: red;
+// }
+// .blueBox{
+//   height: 50px;
+//   width: 100%;
+//   background: blue;
+// }
+// .yellowBow{
+//   height: 50px;
+//   width: 100%;
+//   background: yellow;
+// }
+
+// .container{
+//   display: flex;
+//   flex-direction: column;
+//   gap: 1rem;
+// }
+
+// @media (min-width:500px){
+//   .container{
+//     display: flex;
+//     flex-direction: column-reverse;
+//     gap: 1rem;
+//   }
+// }
+
+// @media (min-width:1000px){
+//   .container{
+//     display: flex;
+//     flex-direction: row;
+//     gap: 1rem;
+//   }
+// }
+
+// .redBox2{
+//   height: 50px;
+//   width: 100%;
+//   background: red;
+// }
+// .blueBox2{
+//   height: 50px;
+//   width: 100%;
+//   background: blue;
+// }
+// .yellowBow2{
+//   height: 50px;
+//   width: 100%;
+//   background: yellow;
+// }
+
+// .container2{
+//   margin-top: 1rem;
+//   display: grid;
+//   grid-template-columns: repeat(1, 1fr);
+//   gap: 1rem;
+// }
+
+// @media (min-width:1000px){
+//   .container2{
+//     margin-top: 1rem;
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     gap: 1rem;
+//   }
+// }
+
+// .redBox3{
+//   height: 50px;
+//   width: 400px;
+//   background: red;
+// }
+// .blueBox3{
+//   height: 50px;
+//   width: 400px;
+//   background: blue;
+// }
+// .yellowBow3{
+//   height: 50px;
+//   width: 400px;
+//   background: yellow;
+// }
+
+// .container3{
+//   margin-top: 1rem;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-wrap: wrap;
+//   gap: 1rem;
+// }
 
 .container{
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  flex-direction: row;
+  gap: 16px;
 }
 
-@media (min-width:500px){
-  .container{
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 1rem;
-  }
-}
-
-@media (min-width:1000px){
-  .container{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-  }
-}
-
-.redBox2{
-  height: 50px;
-  width: 100%;
+.container_square{
+  height: 100px;
+  width: 100px;
   background: red;
 }
-.blueBox2{
-  height: 50px;
-  width: 100%;
-  background: blue;
-}
-.yellowBow2{
-  height: 50px;
-  width: 100%;
+
+.container_circle{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
   background: yellow;
 }
 
-.container2{
-  margin-top: 1rem;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 1rem;
-}
-
-@media (min-width:1000px){
-  .container2{
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-  }
-}
-
-.redBox3{
-  height: 50px;
-  width: 400px;
-  background: red;
-}
-.blueBox3{
-  height: 50px;
-  width: 400px;
+.container_circle-blue{
   background: blue;
-}
-.yellowBow3{
-  height: 50px;
-  width: 400px;
-  background: yellow;
-}
-
-.container3{
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
 }
