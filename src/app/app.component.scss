@@ -93,39 +93,133 @@
 //   gap: 1rem;
 // }
 
-.container{
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-}
+// .container{
+//   display: flex;
+//   flex-direction: row;
+//   gap: 16px;
+// }
 
-.container_square{
+// .container_square{
+//   height: 100px;
+//   width: 100px;
+//   background: red;
+// }
+
+// .container_circle{
+//   height: 100px;
+//   width: 100px;
+//   border-radius: 50%;
+//   background: yellow;
+// }
+
+// .container_circle-blue{
+//   background: blue;
+// }
+// .yellowBow3{
+//   height: 50px;
+//   width: 400px;
+//   background: yellow;
+// }
+
+// .container3{
+//   margin-top: 1rem;
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 1rem;
+// }
+
+.redBox{
   height: 100px;
   width: 100px;
-  background: red;
+  border-radius: 10px;
+  border: 2px solid black;
+  position: relative;
+  overflow: hidden;
+  transition: all 1000ms;
 }
-
-.container_circle{
+.redBox:hover{
+  transform: scale(1.1);
+  color: white;
+}
+.redBox::before{
+  content: '';
+  position: absolute;
   height: 100px;
   width: 100px;
-  border-radius: 50%;
-  background: yellow;
-}
-
-.container_circle-blue{
   background: blue;
+  left: -100px;
+  transition: all 1000ms;
+  z-index: -1;
 }
-.yellowBow3{
-  height: 50px;
-  width: 400px;
-  background: yellow;
+.redBox:hover::before{
+  left: 0px;
 }
 
-.container3{
-  margin-top: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+// .blueBox{
+//   position: absolute;
+//   height: 50px;
+//   width: 50px;
+//   background: blue;
+//   left: -50px;
+// }
+
+.container{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  //border: 2px solid black;
+  animation: 5s linear 0s infinite rotate;
 }
+
+.bubble1{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color:aquamarine;
+  left: -25px;
+  top: -25px;
+}
+.bubble2{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color:aquamarine;
+  right: -25px;
+  top: -25px;
+}
+.bubble3{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color:aquamarine;
+  left: -25px;
+  bottom: -25px;
+}
+.bubble4{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color:aquamarine;
+  right: -25px;
+  bottom: -25px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  70% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+
