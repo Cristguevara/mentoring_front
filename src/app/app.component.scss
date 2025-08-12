@@ -125,6 +125,11 @@
 // }
 
 
+// .container{
+//   display: flex;
+//   flex-direction: row;
+//   gap: 16px;
+// }
 .container{
   display: flex;
   flex-direction: column;
@@ -135,6 +140,97 @@
 }
 
 
+// .container_square{
+//   height: 100px;
+//   width: 100px;
+//   background: red;
+// }
+
+// .container_circle{
+//   height: 100px;
+//   width: 100px;
+//   border-radius: 50%;
+//   background: yellow;
+// }
+
+// .container_circle-blue{
+//   background: blue;
+// }
+// .yellowBow3{
+//   height: 50px;
+//   width: 400px;
+//   background: yellow;
+// }
+
+// .container3{
+//   margin-top: 1rem;
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 1rem;
+// }
+
+.redBox{
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  border: 2px solid black;
+  position: relative;
+  overflow: hidden;
+  transition: all 1000ms;
+}
+.redBox:hover{
+  transform: scale(1.1);
+  color: white;
+}
+.redBox::before{
+  content: '';
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background: blue;
+  left: -100px;
+  transition: all 1000ms;
+  z-index: -1;
+}
+.redBox:hover::before{
+  left: 0px;
+}
+
+// .blueBox{
+//   position: absolute;
+//   height: 50px;
+//   width: 50px;
+//   background: blue;
+//   left: -50px;
+// }
+
+.container{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  //border: 2px solid black;
+  animation: 5s linear 0s infinite rotate;
+}
+
+.bubble1{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color:aquamarine;
+  left: -25px;
+  top: -25px;
+}
+.bubble2{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color:aquamarine;
+  right: -25px;
+  top: -25px;
 .container_card {
   width: 30%;
   height: 450px;
@@ -145,6 +241,23 @@
   margin-top: 100px;
   padding: 8px;
 }
+.bubble3{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color:aquamarine;
+  left: -25px;
+  bottom: -25px;
+}
+.bubble4{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color:aquamarine;
+  right: -25px;
+  bottom: -25px;
 
 .container_card_header {
   display: flex;
@@ -154,6 +267,16 @@
   border-radius: 8px 8px 0 0;
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  70% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
 .container_card_header_img{
 width: 50%;
 }
@@ -195,3 +318,5 @@ width: 50%;
 .container_card_footer_button-blue{
  background-color: blue
 }
+
+
